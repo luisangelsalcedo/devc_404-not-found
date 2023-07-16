@@ -1,0 +1,19 @@
+.btn{
+    display: inline-block;
+    padding: pxToRem(24) pxToRem(43);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: -0.49px;
+    font-size: pxToRem(14);
+
+    &-primary{
+        color: white;
+        background-color: $grey1;
+
+        &:hover{
+            background-color: black;
+        }
+    }
+    
+}

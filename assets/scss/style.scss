@@ -1,0 +1,101 @@
+@import "./fonts.scss";
+@import "./colors.scss";
+@import "./functions.scss";
+@import "./default.scss";
+@import "./buttons.scss";
+
+.page{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container{    
+    width: 100%;
+    max-width: 1250px;   
+    padding: 0 pxToRem(18) 0 pxToRem(24);
+    position: relative;
+    margin: auto;
+}  
+
+header{
+    padding: pxToRem(20) 0;
+
+    h2{
+        font-size: pxToRem(24);
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        letter-spacing: -1.92px;
+    }
+}
+
+main{
+    
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;        
+        
+        @media (min-width:740px) {
+            flex-direction: row;
+            justify-content: space-between;  
+        }
+    }
+    .scarecrow{        
+        width: 286.83px;
+        margin-bottom: pxToRem(60);
+        
+        @media (min-width:740px) {
+            width: 100%;
+            min-width: 286.83px;
+            max-width: 539px;
+            margin-right: pxToRem(20);
+            margin-bottom: 0;
+        }
+    }
+    h1{
+        font-size: pxToRem(48);
+        letter-spacing: -1.68px;
+        margin-bottom: pxToRem(30);
+        
+        @media (min-width:740px) {
+            font-size: pxToRem(64);
+            margin-bottom: pxToRem(36);
+        }
+    }
+    p{
+        font-size: pxToRem(18);
+        letter-spacing: -0.63px;
+        margin-bottom: pxToRem(66);
+
+        @media (min-width:740px) {
+            font-size: pxToRem(24);
+            width: 381px;
+        }
+    }
+    .content{
+        width: 333.33px;  
+        
+         @media (min-width:740px) {
+            flex: 1;
+            min-width: 333.33px; 
+            max-width: 586px;
+         }
+    }
+}
+
+
+footer{
+    color: $grey3;
+    font-family: $font-footer;
+    font-size: pxToRem(14);
+    text-align: center;
+    padding: pxToRem(24) 0;
+
+    a{
+        color: inherit;
+        font-weight: bold;
+        font-size: inherit;
+    }
+}
