@@ -22,7 +22,7 @@
 
 ## Overview
 
-![screenshot](./assets/img/preview.png)
+![screenshot](./assets/img/preview.jpg)
 
 ## Built With
 
